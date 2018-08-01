@@ -1,0 +1,25 @@
+<idea-plugin>
+  <id>edu.cmu.cs.alabaster</id>
+  <name>Alabaster</name>
+  <version>0.1</version>
+  <vendor email="bam@cs.cmu.edu" url="http://www.cs.cmu.edu/~NatProg/">
+    Natural Programming Project, Carnegie Mellon University
+  </vendor>
+
+  <description><![CDATA[
+      Alabaster (Autocomplete Letting Apache Beam Applications Succeed Through Exploration Rapidly)
+      is a PyCharm plugin that improves code completion in Apache Beam. It allows users to see Beam
+      transforms as they're typing, making exploratory programming more feasible.
+    ]]></description>
+
+  <idea-version since-build="173.0"/>
+
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.python</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <completion.contributor language="Python"
+      implementationClass="edu.cmu.cs.alabaster.AlabasterContributor"/>
+  </extensions>
+
+</idea-plugin>

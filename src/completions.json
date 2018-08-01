@@ -1,0 +1,411 @@
+{
+  "transforms": [
+    {
+      "lookup": "Filter",
+      "tail": "only elements meeting a condition",
+      "documentation": "apache_beam.transforms.core.Filter",
+      "import": {
+        "from": "apache_beam",
+        "import": "Filter"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "Map",
+      "tail": "each element to 1 other element",
+      "documentation": "apache_beam.transforms.core.Map",
+      "import": {
+        "from": "apache_beam",
+        "import": "Map"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "FlatMap",
+      "tail": "each element to 0 or more other elements",
+      "documentation": "apache_beam.transforms.core.FlatMap",
+      "import": {
+        "from": "apache_beam",
+        "import": "FlatMap"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "Sample",
+      "tail": "a certain number of elements",
+      "documentation": "apache_beam.transforms.combiners.Sample",
+      "import": {
+        "from": "apache_beam.transforms.combiners",
+        "import": "Sample"
+      },
+      "insertBefore": ".",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "CombineGlobally",
+      "tail": "reducing to a single value",
+      "documentation": "apache_beam.transforms.core.CombineGlobally",
+      "import": {
+        "from": "apache_beam",
+        "import": "CombineGlobally"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "CombinePerKey",
+      "tail": "reducing to a single value for each key",
+      "documentation": "apache_beam.transforms.core.CombinePerKey",
+      "import": {
+        "from": "apache_beam",
+        "import": "CombinePerKey"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "CombineValues",
+      "tail": "assuming values are already grouped",
+      "documentation": "apache_beam.transforms.core.CombineValues",
+      "import": {
+        "from": "apache_beam",
+        "import": "CombineValues"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "Count",
+      "documentation": "apache_beam.transforms.combiners.Count",
+      "import": {
+        "from": "apache_beam.transforms.combiners",
+        "import": "Count"
+      },
+      "insertBefore": ".",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "Mean",
+      "tail": "computing an average",
+      "documentation": "apache_beam.transforms.combiners.Mean",
+      "import": {
+        "from": "apache_beam.transforms.combiners",
+        "import": "Mean"
+      },
+      "insertBefore": ".",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "Top",
+      "tail": "finding the top n values",
+      "documentation": "apache_beam.transforms.combiners.Top",
+      "import": {
+        "from": "apache_beam.transforms.combiners",
+        "import": "Top"
+      },
+      "insertBefore": ".",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "ToList",
+      "tail": "putting all values into one list",
+      "documentation": "apache_beam.transforms.combiners.ToList",
+      "import": {
+        "from": "apache_beam.transforms.combiners",
+        "import": "ToList"
+      },
+      "insertBefore": "()",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "ToDict",
+      "tail": "putting all key-value pairs into one dictionary",
+      "documentation": "apache_beam.transforms.combiners.ToDict",
+      "import": {
+        "from": "apache_beam.transforms.combiners",
+        "import": "ToDict"
+      },
+      "insertBefore": "()",
+      "newline": true,
+      "popup": true
+    },
+    {
+      "lookup": "GroupByKey",
+      "tail": "grouping values with the same key into a list",
+      "documentation": "apache_beam.transforms.core.GroupBy",
+      "import": {
+        "from": "apache_beam",
+        "import": "GroupBy"
+      },
+      "insertBefore": "()",
+      "newline": true
+    },
+    {
+      "lookup": "WindowInto",
+      "tail": "dividing values by timestamp",
+      "documentation": "apache_beam.transforms.core.WindowInto",
+      "import": {
+        "from": "apache_beam",
+        "import": "WindowInto"
+      },
+      "insertBefore": "(",
+      "insertAfter": ")",
+      "newline": true,
+      "popup": true
+    }
+  ],
+  "parameters": {
+    "Filter": [
+      {
+        "lookup": "lambda",
+        "tail": "returning true if the item should be included",
+        "insertBefore": " ",
+        "insertSelect": "x",
+        "insertAfter": ":"
+      }
+    ],
+    "Map": [
+      {
+        "lookup": "lambda",
+        "tail": "returning the transformed element",
+        "insertBefore": " ",
+        "insertSelect": "x",
+        "insertAfter": ":"
+      },
+      {
+        "lookup": "logging.info",
+        "tail": "logging all elements",
+        "documentation": "logging.info",
+        "import": {
+          "import": "logging"
+        }
+      }
+    ],
+    "FlatMap": [
+      {
+        "lookup": "lambda",
+        "tail": "returning an iterable of transformed elements",
+        "insertBefore": " ",
+        "insertSelect": "x",
+        "insertAfter": ":"
+      }
+    ],
+    "CombineGlobally": [
+      {
+        "lookup": "sum",
+        "tail": "all elements into one global count",
+        "documentation": "__builtin__.sum"
+      },
+      {
+        "lookup": "any",
+        "tail": "determining if any values are true",
+        "documentation": "__builtin__.any"
+      },
+      {
+        "lookup": "all",
+        "tail": "determining if all values are true",
+        "documentation": "__builtin__.all"
+      }
+    ],
+    "CombinePerKey": [
+      {
+        "lookup": "sum",
+        "tail": "all elements for each unique key",
+        "documentation": "__builtin__.sum"
+      },
+      {
+        "lookup": "min",
+        "tail": "keeping only the minimum for each key",
+        "documentation": "__builtin__.min"
+      },
+      {
+        "lookup": "max",
+        "tail": "keeping only the maximum for each key",
+        "documentation": "__builtin__.max"
+      },
+      {
+        "lookup": "any",
+        "tail": "determining if any of a key's values are true",
+        "documentation": "__builtin__.any"
+      },
+      {
+        "lookup": "all",
+        "tail": "determining if all of a key's values are true",
+        "documentation": "__builtin__.all"
+      }
+    ],
+    "CombineValues": [
+      {
+        "lookup": "sum",
+        "tail": "all elements for each key",
+        "documentation": "__builtin__.sum"
+      },
+      {
+        "lookup": "min",
+        "tail": "keeping only the minimum for each key",
+        "documentation": "__builtin__.min"
+      },
+      {
+        "lookup": "max",
+        "tail": "keeping only the maximum for each key",
+        "documentation": "__builtin__.max"
+      },
+      {
+        "lookup": "any",
+        "tail": "determining if any of a key's values are true",
+        "documentation": "__builtin__.any"
+      },
+      {
+        "lookup": "all",
+        "tail": "determining if all of a key's values are true",
+        "documentation": "__builtin__.all"
+      }
+    ],
+    "WindowInto": [
+      {
+        "lookup": "FixedWindows",
+        "tail": "sending each element to one window",
+        "documentation": "apache_beam.transforms.window.FixedWindows",
+        "import": {
+          "from": "apache_beam.transforms.window",
+          "import": "FixedWindows"
+        },
+        "insertBefore": "(",
+        "insertSelect": "size",
+        "insertAfter": ")"
+      },
+      {
+        "lookup": "SlidingWindows",
+        "tail": "sending each element to a set of sliding windows",
+        "documentation": "apache_beam.transforms.window.SlidingWindows",
+        "import": {
+          "from": "apache_beam.transforms.window",
+          "import": "SlidingWindows"
+        },
+        "insertBefore": "(",
+        "insertSelect": "size, period",
+        "insertAfter": ")"
+      },
+      {
+        "lookup": "Sessions",
+        "tail": "grouping elements into sessions",
+        "documentation": "apache_beam.transforms.window.Sessions",
+        "import": {
+          "from": "apache_beam.transforms.window",
+          "import": "Sessions"
+        },
+        "insertBefore": "(",
+        "insertSelect": "gap_size",
+        "insertAfter": ")"
+      }
+    ]
+  },
+  "subtransforms": {
+    "Sample": [
+      {
+        "lookup": "FixedSizeGlobally",
+        "tail": "taking a certain number of random elements",
+        "documentation": "apache_beam.transforms.combiners.Sample.FixedSizeGlobally",
+        "insertBefore": "(",
+        "insertSelect": "n",
+        "insertAfter": ")"
+      },
+      {
+        "lookup": "FixedSizePerKey",
+        "tail": "taking a certain number of elements for each key",
+        "documentation": "apache_beam.transforms.combiners.Sample.FixedSizePerKey",
+        "insertBefore": "(",
+        "insertSelect": "n",
+        "insertAfter": ")"
+      }
+    ],
+    "Count": [
+      {
+        "lookup": "Globally",
+        "tail": "finding a global count",
+        "documentation": "apache_beam.transforms.combiners.Count.Globally",
+        "insertBefore": "()"
+      },
+      {
+        "lookup": "PerKey",
+        "tail": "counting values for each unique key",
+        "documentation": "apache_beam.transforms.combiners.Count.PerKey",
+        "insertBefore": "()"
+      },
+      {
+        "lookup": "PerElement",
+        "tail": "counting each unique value",
+        "documentation": "apache_beam.transforms.combiners.Count.PerElement",
+        "insertBefore": "()"
+      }
+    ],
+    "Mean": [
+      {
+        "lookup": "Globally",
+        "tail": "finding a global average",
+        "documentation": "apache_beam.transforms.combiners.Mean.Globally",
+        "insertBefore": "()"
+      },
+      {
+        "lookup": "PerKey",
+        "tail": "averaging values for each unique key",
+        "documentation": "apache_beam.transforms.combiners.Mean.PerKey",
+        "insertBefore": "()"
+      }
+    ],
+    "Top": [
+      {
+        "lookup": "Largest",
+        "tail": "finding the globally greatest n elements",
+        "documentation": "apache_beam.transforms.combiners.Top.Largest",
+        "insertBefore": "(",
+        "insertSelect": "n",
+        "insertAfter": ")"
+      },
+      {
+        "lookup": "Smallest",
+        "tail": "finding the globally least n elements",
+        "documentation": "apache_beam.transforms.combiners.Top.Smallest",
+        "insertBefore": "(",
+        "insertSelect": "n",
+        "insertAfter": ")"
+      },
+      {
+        "lookup": "LargestPerKey",
+        "tail": "finding the greatest n elements for each key",
+        "documentation": "apache_beam.transforms.combiners.Top.LargestPerKey",
+        "insertBefore": "(",
+        "insertSelect": "n",
+        "insertAfter": ")"
+      },
+      {
+        "lookup": "SmallestPerKey",
+        "tail": "finding the least n elements for each key",
+        "documentation": "apache_beam.transforms.combiners.Top.SmallestPerKey",
+        "insertBefore": "(",
+        "insertSelect": "n",
+        "insertAfter": ")"
+      }
+    ]
+  }
+}
