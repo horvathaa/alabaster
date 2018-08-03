@@ -2,14 +2,14 @@
   <id>edu.cmu.cs.alabaster</id>
   <name>Alabaster</name>
   <version>0.1</version>
-  <vendor email="bam@cs.cmu.edu" url="http://www.cs.cmu.edu/~NatProg/">
-    Natural Programming Project, Carnegie Mellon University
+  <vendor email="fvoichick@wustl.edu" url="http://www.cs.cmu.edu/~NatProg/">
+    The Natural Programming Project at Carnegie Mellon University
   </vendor>
 
   <description><![CDATA[
       Alabaster (Autocomplete Letting Apache Beam Applications Succeed Through Exploration Rapidly)
-      is a PyCharm plugin that improves code completion in Apache Beam. It allows users to see Beam
-      transforms as they're typing, making exploratory programming more feasible.
+      is a PyCharm plugin designed to improve code completion in Apache Beam. It allows users to see
+      Beam transforms as they're typing, making exploratory programming more feasible.
     ]]></description>
 
   <idea-version since-build="173.0"/>
