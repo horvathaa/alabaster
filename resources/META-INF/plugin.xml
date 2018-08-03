@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>edu.cmu.cs.alabaster</id>
   <name>Alabaster</name>
-  <version>0.1</version>
+  <version>0.1.1</version>
   <vendor email="fvoichick@wustl.edu" url="http://www.cs.cmu.edu/~NatProg/">
     The Natural Programming Project at Carnegie Mellon University
   </vendor>
